@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/040157397e.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+    <title>Movies2Watch</title>
+    
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+           <i class="fas fa-eye text-primary"></i> Movies<span class="text-primary">2</span>Watch
+           
+           
+        </h1>
+        <div class="container text-center"><span class="badge badge-primary">By OsmanMedia</span> </div>
+           
+           <p class="lead">Don't forget the movies you want to watch. Make a List!</p>
+<form id="book-form">
+
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="form-control">
+    </div>
+
+    <div class="form-group">
+            <label for="date">Date Released</label>
+            <input type="text" id="date" class="form-control">
+        </div>
+
+        <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" class="form-control">
+            </div>
+
+    <input type="submit" value="Add Movie"  class="btn btn-primary btn-block" >
+</form>
+<table class="table table-striped mt-5">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date Released</th>
+            <th>Genre</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="book-list"></tbody>
+</table>
+</div>
+<script src="moviesApp.js"></script>
+</body>
+</html>
